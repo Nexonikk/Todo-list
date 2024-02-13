@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background: rgb(41, 39, 39);
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: rgb(20, 19, 19);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 i {
+    margin-left: 5px;
+    color: #ff5945;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    font-family: 'poppins';
+    background: #ff5945;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    /* padding: 12px 8px 12px 50px; */
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.list-item img {
+    height: 26px;
+    width: 26px;
+}
+
+.list-item span {
+    margin-left: auto;
+}
+
+/* ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+} */
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+/* span {
+    position: fixed;
+    margin-left: 280px;
+    font-size: large;
+} */
+
+span:hover {
+    transition: 0.2s ease;
+    color: #ff5945;
+}
