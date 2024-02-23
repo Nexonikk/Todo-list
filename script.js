@@ -64,5 +64,7 @@ function showTask() {
     listContainer.innerHTML = localStorage.getItem("data")
 }
 
+gsap.to('.nav h2', { duration: 1, z: '-100%', opacity: 0, ease: 'power1' })
+
 
 showTask();
